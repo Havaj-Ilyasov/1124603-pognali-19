@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__logo-img" src="" alt="Логотип сайта 'Погнали'">
+    </div>
+    <nav class="header__nav main-nav">
+      <ul class="site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">О сервисе</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Попутчики</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="site-login">
+      <a class="site-login__link" href="#">Авторизация</a>
+    </p>
+    <p class="contacts-info">
+      <a class="contacts-info__tel" href="tel:88005558628">8 800 555-86-28</a>
+      <a class="contacts-info__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </p>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.facebook.com/">
+          <span class="visually-hidden">Фэйсбук</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.vk.com/">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.instagram.com">
+          <span class="visually-hidden">Инстаграм</span>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Выбор направления</h1>
+
+    <section class="countries">
+      <h2 class="countries__title">Направления</h2>
+      <!-- <section class="countries__profile profile">
+          <h3 class="visually-hidden">Редактирование профиля попутчика</h3>
+          <span class="profile__value">80</span>
+          <span class="profile__text">level</span>
+          <img class="profile__avatar" src="" alt="Аватарка пользователя">
+          <button class="profile__button" type="button">Сменить фото</button>
+          <fieldset class="profile__tags">
+            <legend class="profile__tags-title">Тэги</legend>
+            <textarea class="profile__tags-textarea" name="tags"></textarea>
+          </fieldset>
+          <fieldset class="profile__transports">
+            <legend class="profile__transports-title">Транспорт</legend>
+            <ul class="profile__transports-list">
+              <li class="profile__transports-item">
+                <input class="profile__transports-input" type="checkbox" name="airplane" checked>
+              </li>
+              <li class="profile__transports-item">
+                <input class="profile__transports-input" type="checkbox" name="bus" checked>
+              </li>
+              <li class="profile__transports-item">
+                <input class="profile__transports-input" type="checkbox" name="bike">
+              </li>
+              <li class="profile__transports-item">
+                <input class="profile__transports-input" type="checkbox" name="walking">
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+        <section class="countries__plans plans">
+          <h3 class="plans__title">Мои планы</h3>
+          <ol class="plans__list">
+            <li class="plans__item">
+              <article class="plan">
+                <h4 class="plan__title">1. Франция, Италия</h4>
+                <p class="plan__travelmates">3 попутчика</p>
+                <p class="plan__time">26 мар - 29 мар</p>
+                <a class="plan__link" href="#">Изменить</a>
+              </article>
+            </li>
+            <li class="plans__item">
+              <article class="plan">
+                <h4 class="plan__title">1. Таилан, Индонезия</h4>
+                <p class="plan__travelmates">1 попутчик</p>
+                <p class="plan__time">1 июл - 15 июл</p>
+                <a class="plan__link" href="#">Изменить</a>
+              </article>
+            </li>
+          </ol>
+        </section>
+      </section>
+      <section class="countries__add-plan add-plan">
+        <h3 class="add-plan__title">Добавить план:</h3>
+        <ol class="add-plan__list">
+          <li class="add-plan__item step">
+            <span class="step__index">Шаг 1.</span>
+            <h4 class="step__title">Даты пребывания</h4>
+            <p class="step__desc">
+              Укажите предпочтительное количество попутчиков,
+              которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+            </p>
+            <button class="step__input-decrease" aria-label="Уменьшить количество попутчиков"></button>
+            <button class="step__input-increase" aria-label="Увеличить количество попутчиков"></button>
+            <input class="step__input step__input--travelmates" type="number" value="2">
+            <span class="step__unit">чел.</span>
+
+            <button class="step__input-decrease" aria-label="Уменьшить количество дней"></button>
+            <button class="step__input-increase" aria-label="Увеличить количество дней"></button>
+            <input class="step__input step__input--days" type="number" value="2">
+            <span class="step__unit">дн.</span>
+
+            <input class="visually-hidden" id="step__input-children" type="checkbox" checked>
+            <label for="step__input-children">Можно с детьми</label>
+
+            <article class="step__calendar calendar">
+              <h3 class="visually-hidden">Выбор даты на календаре</h3>
+              <table class="calendar__container">
+                <caption>
+                  <ul class="calendar__month-list">
+                    <li class="calendar__month-item">
+                      <button class="calendar__moth-btn prev" aria-label="Переключает на предыдущий месяц"></button>
+                    </li>
+                    <li class="calendar__month-item">
+                      <button class="calendar__moth-btn next" aria-label="Переключает на следующий месяц"></button>
+                    </li>
+                    <h4 class="calendar__month-name">
+                      <time datetime="2019-03">Март 2019</time>
+                    </h4>
+                  </ul>
+                </caption>
+                <thead>
+                  <tr class="calendar__week">
+                    <th class="calendar__day calendar__day--name">П</th>
+                    <th class="calendar__day calendar__day--name">В</th>
+                    <th class="calendar__day calendar__day--name">С</th>
+                    <th class="calendar__day calendar__day--name">Ч</th>
+                    <th class="calendar__day calendar__day--name">П</th>
+                    <th class="calendar__day calendar__day--name">С</th>
+                    <th class="calendar__day calendar__day--name">В</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar__days">
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="23">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="24">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="25">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="26">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="27">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="28">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="1">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="2">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="3">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="4">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="5">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="6">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="7">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="8">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="9">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="10">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="11">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="12">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="13">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="14">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="15">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="16">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="17">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="18">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="19">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="20">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="21">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="22">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="23">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="24">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="25">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="26">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="27">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="28">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="29">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="30">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="31">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="1">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="2">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="3">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="4">
+                    </td>
+                    <td class="calendar__day calendar__day--value">
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="5">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="step__next" href="#">Следующий шаг</a>
+            </article>
+          </li>
+          <li class="add-plan__item step">
+            <span class="step__index">Шаг 2.</span>
+            <h4 class="step__title">Маршрут</h4>
+            <p class="step__desc">
+              Укажите страны, которые вы хотели посетить.
+              Это может быть одна или сразу несколько.
+            </p>
+            <select name="country">
+              <option value="Germany">Босния и Герцеговня</option>
+            </select>
+            <select name="country">
+              <option value="Chekhiya">Чехия</option>
+            </select>
+            <select name="country">
+            </select>
+            <button class="step__choose-country" type="button">Добавить страну</button>
+            <a class="step__next" href="#">Следующий шаг</a>
+            <a class="step__back" href="#">На шаг назад</a>
+          </li>
+          <li class="add-plan__item step">
+            <span class="step__index">Шаг 2.</span>
+            <h4 class="step__title">Маршрут</h4>
+            <p class="step__desc">
+              Наконец, расскажите о своих планах времяпровождения.
+              Можно писать в свободной форме и ставить тэги.
+            </p>
+            <p class="step__textarea-title">Босния и Герцеговня</p>
+            <textarea class="step__textarea" name="plan" placeholder="План действий"></textarea>
+            <p class="step__textarea-title">Чехия</p>
+            <textarea class="step__textarea" name="plan" placeholder="План действий"></textarea>
+            <button class="step__submit" type="submit">Отправить</button>
+            <a class="step__back" href="#">На шаг назад</a>
+          </li>
+        </ol>
+      </section> -->
+
+  </main>
+
+  <footer>
+    <b class="footer__slogan">Погнали?</b>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.facebook.com/">
+          <span class="visually-hidden">Фэйсбук</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.vk.com/">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.instagram.com">
+          <span class="visually-hidden">Инстаграм</span>
+        </a>
+      </li>
+    </ul>
+    <div class="developer">
+      <p class="developer__text">Разработано</p>
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="developer__logo-img" src="" alt="" width="27" height="34" alt="Логотип HTML Academy">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
