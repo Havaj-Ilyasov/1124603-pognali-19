@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Погнали</title>
 </head>
 
@@ -26,7 +27,7 @@
       </ul>
     </nav>
     <p class="page-header__login site-login">
-      <a class="site-login__link" href="#">Авторизация</a>
+      <a class="site-login__link main-link" href="#">Авторизация</a>
     </p>
     <p class="page-header__contacts-info contacts-info">
       <a class="contacts-info__tel" href="tel:88005558628">8 800 555-86-28</a>
@@ -56,8 +57,8 @@
 
     <section class="intro">
       <h2 class="visually-hidden">Промо "Погнали"</h2>
-      <h2 class="intro__title">В путешествиес крутыми попутчиками!</h2>
-      <p class="contacts-info">
+      <h2 class="intro__title">В путешествие с крутыми попутчиками!</h2>
+      <p class="intro__contacts-info contacts-info">
         <a class="contacts-info__tel" href="tel:88005558628">
           <span class="visually-hidden">88005558628</span>
         </a>
@@ -66,9 +67,7 @@
         </a>
       </p>
       <p class="site-login">
-        <a class="site-login__link" href="#">
-          <span class="visually-hidden">Авторизация</span>
-        </a>
+        <a class="site-login__link main-link" href="#">Авторизация</a>
       </p>
       <blockquote class="review">
         <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
@@ -87,7 +86,7 @@
     </section>
 
     <section class="about">
-      <h2 class="about__title">О сервисе</h2>
+      <h2 class="about__title section-title">О сервисе</h2>
       <p class="about__desc">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
         Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
@@ -98,7 +97,7 @@
     </section>
 
     <section class="countries">
-      <h2 class="countries__title">Направления</h2>
+      <h2 class="countries__title section-title">Направления</h2>
       <p class="countries__desc">Мы не продаем туры и ничего не рекламируем.
         Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
       </p>
@@ -137,11 +136,11 @@
           </article>
         </li>
       </ul>
-      <a class="countries__btn" href="#">Показать все</a>
+      <a class="countries__link main-link--index" href="#">Показать все</a>
     </section>
 
     <section class="travelmates-intro">
-      <h2 class="travelmates-intro__title">Попутчки</h2>
+      <h2 class="travelmates-intro__title section-title">Попутчки</h2>
       <p class="travelmates-intro__desc">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
         Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
       </p>
@@ -232,33 +231,63 @@
           </article>
         </li>
       </ul>
-      <a class="travelmates-intro__btn" href="#">Показать всех</a>
+      <a class="travelmates-intro__btn main-link--index" href="#">Показать всех</a>
     </section>
 
     <section class="rates">
       <h2 class="visually-hidden">Тарифы</h2>
-      <h3 class="rates__title">Добавьте свой профиль</h3>
+      <h3 class="rates__title section-title">Добавьте свой профиль</h3>
       <ol class="rates__list">
-        <li class="rate__list-item">
+        <li class="rates__list-item">
           <dl class="rates__specifics">
-            <dt class="rate__specific">Базовое размещение</dt>
-            <dd class="rate__specific-value">Бесплатно</dd>
+            <dt class="rates__specific">Базовое размещение</dt>
+            <dd class="rates__specific-value">Бесплатно</dd>
           </dl>
         </li>
-        <li class="rate__list-item">
+        <li class="rates__list-item">
           <dl class="rates__specifics">
-            <dt class="rate__specific">Вывод на первых позициях</dt>
-            <dd class="rate__specific-value">99 руб./мес</dd>
+            <dt class="rates__specific">Вывод на первых позициях</dt>
+            <dd class="rates__specific-value">99 руб./мес</dd>
           </dl>
         </li>
-        <li class="rate__list-item">
+        <li class="rates__list-item">
           <dl class="rates__specifics">
-            <dt class="rate__specific">Кастомный цвет карточки</dt>
-            <dd class="rate__specific-value">59 руб./мес</dd>
+            <dt class="rates__specific">Кастомный цвет карточки</dt>
+            <dd class="rates__specific-value">59 руб./мес</dd>
           </dl>
         </li>
       </ol>
       <a class="rates__btn" href="#">Показать тарифы для бизнеса</a>
+      <div class="rates__modal modal">
+        <h3 class="modal__title section-title">Бизнес-тарифы</h3>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <dl class="modal__specifics">
+              <dt class="modal__specific">Реклама у блоггера</dt>
+              <dd class="modal__specific-value">300 000 ру./пост</dd>
+            </dl>
+          </li>
+          <li class="modal__item">
+            <dl class="modal__specifics">
+              <dt class="modal__specific">Накрутка подписчиков</dt>
+              <dd class="modal__specific-value">от 1 руб./шт.</dd>
+            </dl>
+          </li>
+          <li class="modal__item">
+            <dl class="modal__specifics">
+              <dt class="modal__specific">Лайки от ботов</dt>
+              <dd class="modal__specific-value">от 20 коп./лайк</dd>
+            </dl>
+          </li>
+          <li class="modal__item">
+            <dl class="modal__specifics">
+              <dt class="modal__specific">Ваш продакт-плейсмент</dt>
+              <dd class="modal__specific-value">Индивидуально</dd>
+            </dl>
+          </li>
+        </ul>
+        <button class="modal__btn">Закрыть окно</button>
+      </div>
     </section>
 
     <section class="registration">
@@ -290,9 +319,11 @@
       </section>
     </section>
 
-    <footer>
-      <b class="footer__slogan">Погнали?</b>
-      <ul class="social-list">
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="">
+        <img class="page-footer__logo-img" src="" alt="Логотип сайта 'Погнали'">
+      </a>
+      <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="https://www.facebook.com/">
             <span class="visually-hidden">Фэйсбук</span>
@@ -309,7 +340,7 @@
           </a>
         </li>
       </ul>
-      <div class="developer">
+      <div class="page-footer__developer developer">
         <p class="developer__text">Разработано</p>
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="developer__logo-img" src="" alt="" width="27" height="34" alt="Логотип HTML Academy">
