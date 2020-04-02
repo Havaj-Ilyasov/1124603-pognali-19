@@ -1,0 +1,31 @@
+.calendar {
+  color: $greyish-brown;
+
+  background-color: $white;
+}
+
+.calendar__month-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.calendar__month-name {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $dark-slate-blue;
+}
+
+.calendar__day-input-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.calendar__day--off {
+  color: $orange-red;
+}

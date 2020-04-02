@@ -1,0 +1,16 @@
+.level {
+  margin: 0;
+
+  color: $black;
+
+  background-color: $white;
+}
+
+.level__value {
+  line-height: 18px;
+}
+
+.level__text {
+  font-size: 15px;
+  line-height: 18px;
+}

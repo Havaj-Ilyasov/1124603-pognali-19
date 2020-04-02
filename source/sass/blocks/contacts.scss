@@ -1,0 +1,16 @@
+.contacts {
+  background-color: $light-gold;
+}
+
+.contacts__address {
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: $dark-blue-grey;
+}
+
+.contacts__link {
+  font-weight: 700;
+  text-decoration: none;
+  color: $dark-slate-blue;
+}
