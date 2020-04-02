@@ -1,0 +1,22 @@
+.modal__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.modal__specifics {
+  margin: 0;
+}
+
+.modal__specific-value {
+  margin: 0;
+}
+
+.modal__btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $dark-slate-blue;
+  text-transform: uppercase;
+}

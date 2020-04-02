@@ -1,0 +1,40 @@
+.travelmate__profile-link {
+  text-decoration: none;
+}
+
+.travelmate__countries-title,
+.travelmate__transports-title {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $greyish-brown;
+}
+
+.travelmate__country-name {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+}
+
+.travelmates .travelmate__level {
+  background-color: $white;
+}
+
+.travelmates .travelmate__level {
+  color: $black;
+}
+
+.travelmates .travelmate__level-value {
+  line-height: 18px;
+}
+
+.travelmates .travelmate__level-text {
+  font-size: 15px;
+  line-height: 18px;
+}
