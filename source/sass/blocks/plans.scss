@@ -1,0 +1,20 @@
+.plans {
+  color: $dark-slate-blue;
+
+  background-color: $pale-grey-two;
+}
+
+.plans__title {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.plans__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

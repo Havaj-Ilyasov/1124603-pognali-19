@@ -1,0 +1,30 @@
+.plan {
+  background-color: $white;
+}
+
+.plan__title {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.plan__travelmates,
+.plan__time {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.plan__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba($color: $black, $alpha: 0.3);
+}

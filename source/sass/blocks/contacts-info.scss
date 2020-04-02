@@ -8,5 +8,14 @@
   line-height: 22px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.page-header__contacts-info .contacts-info__tel,
+.page-header__contacts-info .contacts-info__mail {
   color: $dark-blue-grey;
+}
+
+.registration__contacts-info .contacts-info__tel,
+.registration__contacts-info .contacts-info__mail {
+  color: $light-gold;
 }

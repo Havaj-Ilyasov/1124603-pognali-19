@@ -1,0 +1,81 @@
+.step {
+  background-color: $white;
+}
+
+.step__index,
+.step__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $dark-slate-blue;
+}
+
+.step__title {
+  margin: 0;
+}
+
+.step__desc {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $greyish-brown;
+}
+
+.step__input-label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.step__input {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 13.5px;
+  color: $dark-slate-blue;
+}
+
+.step__unit {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgba($color: $dark-slate-blue, $alpha: 0.3);
+}
+
+.step__input-children-label {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  color: $greyish-brown;
+}
+
+.step__back {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.step__submit {
+  border: none;
+}
+
+.step__textarea-title {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.step__textarea {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $greyish-brown;
+}

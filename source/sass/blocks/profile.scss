@@ -1,0 +1,61 @@
+.profile .level__value {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 38px;
+  color: $dark-two;
+}
+
+.profile .level__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $greyish-brown;
+}
+
+.profile__button {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $dark-two;
+
+  background-color: $pale-grey-two;
+}
+
+.profile__tags {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+
+  background-color: $bg-grey;
+  border: 1px solid $cloudy-blue;
+}
+
+.profile__tags-title,
+.profile__transports-title {
+
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+}
+
+.profile__tags-textarea {
+  background-color: $bg-grey;
+  border: none;
+}
+
+.profile__transports {
+  margin: 0;
+  padding: 0;
+
+  background-color: $bg-grey;
+  border: 1px solid $cloudy-blue;
+}
+
+.profile__transports-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+

@@ -59,8 +59,10 @@
       <h2 class="countries__title page-title">Направления</h2>
       <section class="countries__profile profile">
         <h3 class="visually-hidden">Редактирование профиля попутчика</h3>
-        <span class="profile__value">80</span>
-        <span class="profile__text">level</span>
+        <p class="profile__level level">
+          <span class="level__value">80</span>
+          <span class="level__text">level</span>
+        </p>
         <img class="profile__avatar" src="" alt="Аватарка пользователя">
         <button class="profile__button" type="button">Сменить фото</button>
         <fieldset class="profile__tags">
@@ -86,7 +88,7 @@
         </fieldset>
       </section>
       <section class="countries__plans plans">
-        <h3 class="plans__title">Мои планы</h3>
+        <h3 class="plans__title">Мои планы:</h3>
         <ol class="plans__list">
           <li class="plans__item">
             <article class="plan">
@@ -119,16 +121,18 @@
           </p>
           <button class="step__input-decrease" aria-label="Уменьшить количество попутчиков"></button>
           <button class="step__input-increase" aria-label="Увеличить количество попутчиков"></button>
-          <input class="step__input step__input--travelmates" type="number" value="2">
+          <label class="step__input-label" for="step__input--travelmates">Ищу попутчиков:</label>
+          <input class="step__input step__input--travelmates" id="step__input--travelmates" type="number" value="2">
           <span class="step__unit">чел.</span>
 
           <button class="step__input-decrease" aria-label="Уменьшить количество дней"></button>
           <button class="step__input-increase" aria-label="Увеличить количество дней"></button>
-          <input class="step__input step__input--days" type="number" value="2">
+          <label class="step__input-label" for="step__input--days">Длительность:</label>
+          <input class="step__input step__input--days" id="step__input--days" type="number" value="2">
           <span class="step__unit">дн.</span>
 
           <input class="visually-hidden" id="step__input-children" type="checkbox" checked>
-          <label for="step__input-children">Можно с детьми</label>
+          <label class="step__input-children-label" for="step__input-children">Можно с детьми</label>
 
           <article class="step__calendar calendar">
             <h3 class="visually-hidden">Выбор даты на календаре</h3>
@@ -153,142 +157,268 @@
                   <th class="calendar__day calendar__day--name">С</th>
                   <th class="calendar__day calendar__day--name">Ч</th>
                   <th class="calendar__day calendar__day--name">П</th>
-                  <th class="calendar__day calendar__day--name">С</th>
-                  <th class="calendar__day calendar__day--name">В</th>
+                  <th class="calendar__day calendar__day--name calendar__day--off">С</th>
+                  <th class="calendar__day calendar__day--name calendar__day--off">В</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="calendar__days">
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="23">
+                    <label class="calendar__day-input-label">
+                      23
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="23">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="24">
+                    <label class="calendar__day-input-label">
+                      24
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="24">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="25">
+                    <label class="calendar__day-input-label">
+                      25
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="25">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="26">
+                    <label class="calendar__day-input-label">
+                      26
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="26">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="27">
+                    <label class="calendar__day-input-label">
+                      27
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="27">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="28">
+                    <label class="calendar__day-input-label">
+                      28
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="28">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="1">
+                    <label class="calendar__day-input-label">
+                      1
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="1">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="2">
+                    <label class="calendar__day-input-label">
+                      2
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="2">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="3">
+                    <label class="calendar__day-input-label">
+                      3
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="3">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="4">
+                    <label class="calendar__day-input-label">
+                      4
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="4">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="5">
+                    <label class="calendar__day-input-label">
+                      5
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="5">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="6">
+                    <label class="calendar__day-input-label">
+                      6
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="6">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="7">
+                    <label class="calendar__day-input-label">
+                      7
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="7">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="8">
+                    <label class="calendar__day-input-label">
+                      8
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="8">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="9">
+                    <label class="calendar__day-input-label">
+                      9
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="9">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="10">
+                    <label class="calendar__day-input-label">
+                      10
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="10">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="11">
+                    <label class="calendar__day-input-label">
+                      11
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="11">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="12">
+                    <label class="calendar__day-input-label">
+                      12
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="12">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="13">
+                    <label class="calendar__day-input-label">
+                      13
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="13">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="14">
+                    <label class="calendar__day-input-label">
+                      14
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="14">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="15">
+                    <label class="calendar__day-input-label">
+                      15
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="15">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="16">
+                    <label class="calendar__day-input-label">
+                      16
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="16">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="17">
+                    <label class="calendar__day-input-label">
+                      17
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="17">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="18">
+                    <label class="calendar__day-input-label">
+                      18
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="18">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="19">
+                    <label class="calendar__day-input-label">
+                      19
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="19">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="20">
+                    <label class="calendar__day-input-label">
+                      20
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="20">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="21">
+                    <label class="calendar__day-input-label">
+                      21
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="21">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="22">
+                    <label class="calendar__day-input-label">
+                      22
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="22">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="23">
+                    <label class="calendar__day-input-label">
+                      23
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="23">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="24">
+                    <label class="calendar__day-input-label">
+                      24
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="24">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="25">
+                    <label class="calendar__day-input-label">
+                      25
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="25">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="26">
+                    <label class="calendar__day-input-label">
+                      26
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="26">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="27">
+                    <label class="calendar__day-input-label">
+                      27
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="27">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="28">
+                    <label class="calendar__day-input-label">
+                      28
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="28">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="29">
+                    <label class="calendar__day-input-label">
+                      29
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="29">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="30">
+                    <label class="calendar__day-input-label">
+                      30
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="30">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="31">
+                    <label class="calendar__day-input-label">
+                      31
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="31">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="1">
+                    <label class="calendar__day-input-label">
+                      1
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="1">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="2">
+                    <label class="calendar__day-input-label">
+                      2
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="2">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="3">
+                    <label class="calendar__day-input-label">
+                      3
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="3">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="4">
+                    <label class="calendar__day-input-label">
+                      4
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="4">
+                    </label>
                   </td>
                   <td class="calendar__day calendar__day--value">
-                    <input class="visually-hidden calendar__day-input" type="checkbox" value="5">
+                    <label class="calendar__day-input-label">
+                      5
+                      <input class="visually-hidden calendar__day-input" type="checkbox" value="5">
+                    </label>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <a class="step__next" href="#">Следующий шаг</a>
+            <a class="step__next main-link" href="#">Следующий шаг</a>
           </article>
         </li>
         <li class="add-plan__item step">
@@ -298,16 +428,16 @@
             Укажите страны, которые вы хотели посетить.
             Это может быть одна или сразу несколько.
           </p>
-          <select name="country">
+          <select name="step__country">
             <option value="Germany">Босния и Герцеговня</option>
           </select>
-          <select name="country">
+          <select name="step__country">
             <option value="Chekhiya">Чехия</option>
           </select>
-          <select name="country">
+          <select name="step__country">
           </select>
           <button class="step__choose-country" type="button">Добавить страну</button>
-          <a class="step__next" href="#">Следующий шаг</a>
+          <a class="step__next main-link" href="#">Следующий шаг</a>
           <a class="step__back" href="#">На шаг назад</a>
         </li>
         <li class="add-plan__item step">
@@ -321,7 +451,7 @@
           <textarea class="step__textarea" name="plan" placeholder="План действий"></textarea>
           <p class="step__textarea-title">Чехия</p>
           <textarea class="step__textarea" name="plan" placeholder="План действий"></textarea>
-          <button class="step__submit" type="submit">Отправить</button>
+          <button class="step__submit main-link" type="submit">Отправить</button>
           <a class="step__back" href="#">На шаг назад</a>
         </li>
       </ol>
