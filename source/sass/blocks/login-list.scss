@@ -1,0 +1,31 @@
+.login-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.login-list--table-version {
+  display: none;
+  margin: 0;
+}
+
+.login-list__link {
+  display: block;
+
+  color: $dark-blue-grey;
+
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .login-list--table-version {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .login-list--table-version {
+    display: none;
+  }
+}

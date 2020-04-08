@@ -1,16 +1,57 @@
 .registration {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
   color: $white;
 
   background-color: $dark-blue-grey;
 }
 
+.registration__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration__title {
+  margin-bottom: 23px;
+
+  text-align: center;
+}
+
 .registration__desc {
+  width: 198px;
   margin: 0;
+  margin-bottom: 32px;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
 }
 
 .registration__link {
   color: $light-gold;
+
+  text-decoration: none;
+}
+
+.registration__form-input-wrapper {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .registration__title {
+    margin-bottom: 60px;
+  }
+
+  .registration__desc {
+    width: 606px;
+    margin-bottom: 65px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .registration__desc {
+    margin-bottom: 60px;
+  }
 }

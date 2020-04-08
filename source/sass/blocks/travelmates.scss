@@ -2,17 +2,75 @@
   background-color: $bg-grey;
 }
 
+.travelmates .travelmates__name {
+  font-size: 20px;
+  line-height: 20px;
+}
+
 .travelmates__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.travelmates__item {
+  margin-bottom: 10px;
+}
+
+.travelmates__item:last-child {
+  margin-bottom: 25px;
+}
+
+.travelmates .level__value {
+  line-height: 18px;
+}
+
 .travelmates__show-more {
+  display: block;
+  width: 115px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
   color: $dark-slate-blue;
+}
+
+@media (min-width: $tablet-width) {
+  .travelmates .travelmates__name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .travelmates__item {
+    margin-bottom: 40px;
+  }
+
+  .travelmates__item:last-child {
+    margin-bottom: 50px;
+  }
+
+  .travelmates__show-more {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travelmates__item {
+    width: 950px;
+    margin-bottom: 30px;
+  }
+
+  .travelmates__item:last-child {
+    margin-bottom: 70px;
+  }
+
+  .travelmates__show-more {
+    margin-bottom: 75px;
+  }
 }

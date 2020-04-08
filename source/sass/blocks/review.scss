@@ -1,16 +1,40 @@
 .review {
   margin: 0;
-
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .review__text {
+  width: 148px;
   margin: 0;
 
+  font-size: 16px;
   font-weight: 300;
+  line-height: 22px;
+}
+
+.review__author {
+  width: 153px;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
 }
 
 .review__author-job {
   font-style: normal;
 }
+
+@media (min-width: $tablet-width) {
+  .review__text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .review__author {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+// }

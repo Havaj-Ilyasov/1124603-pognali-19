@@ -9,11 +9,19 @@
   background-color: $light-gold;
 }
 
-.main-link--index {
+.main-link-index {
   font-size: 18px;
+  font-weight: 700;
   line-height: 18px;
   text-decoration: none;
   color: $dark-slate-blue;
 
   background-color: $light-gold;
+}
+
+@media (min-width: $tablet-width) {
+  .main-link-index {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }

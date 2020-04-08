@@ -1,28 +1,31 @@
 .rates {
-  font-size: 16px;
   font-weight: 300;
-  line-height: 22px;
   color: $greyish-brown;
 
   background-color: $bg-grey;
 }
 
-.rates__list {
-  margin: 0;
-  padding: 0;
+.rates__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
 
-  list-style: none;
+.rates__title {
+  width: 101px;
+  margin-bottom: 60px;
 }
 
 .rates__specifics {
-  margin: 0;
-}
+  margin-bottom: 45px;
 
-.rates__specific-value {
-  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .rates__btn {
+  align-self: center;
+
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
@@ -32,4 +35,49 @@
 
 .rates__modal {
   background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .rates__wrapper {
+    padding-left: 0;
+  }
+
+  .rates__title {
+    width: auto;
+    margin-bottom: 95px;
+
+    text-align: center;
+  }
+
+  .rates__specifics {
+    width: 100%;
+    margin-bottom: 80px;
+    padding-right: 35px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .rates__item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .rates__btn {
+    align-self: flex-start;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: $light-navy;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__title {
+    margin-bottom: 155px;
+  }
+
+  .rates__specifics {
+    padding-right: 345px;
+  }
 }

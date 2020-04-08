@@ -1,5 +1,22 @@
+.travelmate {
+  background-color: $white;
+}
+
 .travelmate__profile-link {
   text-decoration: none;
+}
+
+.travelmate__name {
+  margin: 0;
+
+  font-weight: 700;
+  color: $dark-slate-blue;
+}
+
+.travelmate__likes {
+  font-size: 14px;
+  line-height: 21px;
+  color: $dark-two;
 }
 
 .travelmate__countries-title,
@@ -12,6 +29,14 @@
   color: $greyish-brown;
 }
 
+.travelmate__countries,
+.travelmate__transports {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .travelmate__country-name {
   margin: 0;
 
@@ -20,4 +45,23 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $dark-slate-blue;
+}
+
+.travelmate__interests {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $greyish-brown;
+}
+
+@media (min-width: $tablet-width) {
+  .travelmate__likes {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .travelmate__interests {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
