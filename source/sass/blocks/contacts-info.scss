@@ -1,18 +1,13 @@
-.contacts-info {
-  margin: 0;
-}
-
-.contacts-info__tel,
-.contacts-info__mail {
+.contacts-info__link {
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.page-header__contacts-info .contacts-info__tel,
-.page-header__contacts-info .contacts-info__mail {
-  color: $dark-blue-grey;
+.contacts-info__icon {
+  width: 40px;
+  height: 40px;
 }
 
 .registration__contacts-info .contacts-info__tel,

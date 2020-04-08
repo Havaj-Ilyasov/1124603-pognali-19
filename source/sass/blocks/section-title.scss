@@ -5,3 +5,10 @@
   line-height: 24px;
   color: $mango;
 }
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}

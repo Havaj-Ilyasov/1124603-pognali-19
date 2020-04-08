@@ -2,8 +2,19 @@
   background-color: $bg-main-dark;
 }
 
+.travelmates-intro__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.travelmates-intro__title {
+  margin-bottom: 25px;
+}
+
 .travelmates-intro__desc {
+  width: 213px;
   margin: 0;
+  margin-bottom: 30px;
 
   font-size: 16px;
   font-weight: 300;
@@ -12,7 +23,12 @@
 }
 
 .travelmates-intro__subtitle {
+  display: inline-block;
+  width: 192px;
+  margin-bottom: 60px;
+
   font-size: 16px;
+  font-weight: 700;
   line-height: 22px;
   color: $white;
 }
@@ -24,55 +40,84 @@
   list-style: none;
 }
 
-.travelmate {
-  background-color: $white;
+.travelmates-intro .travelmate {
+  min-height: 483px;
+  margin-bottom: 10px;
 }
 
-.travelmate__name {
-  margin: 0;
-
-  font-size: 21px;
-  line-height: 21px;
-  color: $dark-slate-blue;
+.travelmates-intro__item:last-child .travelmate {
+  margin-bottom: 20px;
 }
 
-.travelmate__countries {
-  margin: 0;
-  padding: 0;
+@media (min-width: $tablet-width) {
+  .travelmates-intro__wrapper {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
 
-  list-style: none;
+  .travelmates-intro__title {
+    margin-bottom: 60px;
+  }
+
+  .travelmates-intro__desc {
+    width: 423px;
+    margin-bottom: 45px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .travelmates-intro__subtitle {
+    width: 258px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .travelmates-intro__list {
+    display: flex;
+  }
+
+  .travelmates-intro__item {
+    margin-right: 50px;
+  }
+
+  .travelmates-intro__item:last-child {
+    margin-right: 0;
+  }
+
+  .travelmates-intro .travelmate {
+    width: 285px;
+    margin-bottom: 80px;
+  }
 }
 
-.travelmate__interests {
-  margin: 0;
-  padding: 0;
+@media (min-width: $desktop-width) {
+  .travelmates-intro__wrapper {
+    position: relative;
 
-  font-size: 16px;
-  line-height: 18px;
-  color: $greyish-brown;
+    align-items: flex-start;
+    padding-right: 0;
+    padding-left: 70px;
+  }
 
-  list-style: none;
-}
+  .travelmates-intro__subtitle {
+    margin-bottom: 85px;
+  }
 
-.travelmate__transports {
-  margin: 0;
-  padding: 0;
+  .travelmates-intro__list {
+    position: absolute;
+    right: 0;
+    top: 50%;
 
-  list-style: none;
-}
+    transform: translateY(-50%);
+  }
 
-.travelmates-intro .level {
-  color: $white;
+  .travelmates-intro .travelmate {
+    margin-bottom: 0;
+  }
 
-  background-color: $black;
-}
-
-.travelmates-intro .level__value {
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.travelmates-intro .level__text {
-  font-size: 14px;
-  line-height: 14px;
+  .travelmates-intro__link {
+    width: 280px;
+  }
 }

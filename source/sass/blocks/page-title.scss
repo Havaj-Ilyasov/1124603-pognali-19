@@ -7,3 +7,10 @@
 
   background-color: $dark-two;
 }
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
