@@ -1,4 +1,9 @@
 .filter-travelmates {
+  padding-top: 26px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 22px;
+
   color: $dark-slate-blue;
 
   background-color: $light-gold;
@@ -8,13 +13,11 @@
   margin: 0;
 
   font-size: 22px;
-  font-weight: 700;
   line-height: 22px;
 }
 
 .filter-travelmates__subtitle {
   font-size: 16px;
-  font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -35,11 +38,43 @@
 
 .filter-travelmates__link {
   font-size: 17px;
-  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
   color: $dark-slate-blue;
 
   background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-travelmates {
+    padding-top: 37px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 38px;
+  }
+
+  .filter-travelmates__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .filter-travelmates__subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .filter-travelmates__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-travelmates {
+    order: 1;
+    width: 285px;
+    padding: 47px;
+  }
 }

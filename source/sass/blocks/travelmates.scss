@@ -61,6 +61,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .travelmates__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .travelmates__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   .travelmates__item {
     width: 950px;
     margin-bottom: 30px;

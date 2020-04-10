@@ -1,4 +1,7 @@
 .registration {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
   color: $white;
 
   background-color: $dark-blue-grey;
@@ -8,6 +11,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 72px;
+  padding-bottom: 45px;
 }
 
 .registration__title {
@@ -21,9 +26,7 @@
   margin: 0;
   margin-bottom: 32px;
 
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 22px;
+  text-align: center;
 }
 
 .registration__link {
@@ -32,11 +35,57 @@
   text-decoration: none;
 }
 
+.registration__form {
+  width: 100%;
+}
+
 .registration__form-input-wrapper {
+  margin: 0;
+
+  background-color: $white;
+}
+
+.registration__form-input {
+  font-size: 18px;
+  line-height: 18px;
+  color: $greyish-brown;
+}
+
+.registration__form-btn {
+  font-size: 0;
+}
+
+.registration__subtitle {
+  margin-bottom: 36px;
+
+  text-align: center;
+}
+
+.registration__contacts-info {
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
+.registration__contacts-info .contacts-info__link {
+  font-size: 16px;
+  line-height: 22px;
+  color: $light-gold;
+}
+
 @media (min-width: $tablet-width) {
+  .registration {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .registration__wrapper {
+    padding-top: 77px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 85px;
+  }
+
   .registration__title {
     margin-bottom: 60px;
   }
@@ -48,10 +97,50 @@
     font-size: 28px;
     line-height: 33px;
   }
+
+  .registration__form-input-wrapper {
+    margin-bottom: 60px;
+  }
+
+  .registration__form-input {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .registration__subtitle {
+    margin-bottom: 66px;
+  }
+
+  .registration__contacts-info {
+    align-self: flex-start;
+  }
+
+  .registration__contacts-info .contacts-info__link {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .registration__wrapper {
+    padding-top: 108px;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 138px;
+  }
+
   .registration__desc {
     margin-bottom: 60px;
+  }
+
+  .registration__form-btn {
+    font-size: 24px;
+    line-height: 24px;
+    color: $dark-slate-blue;
+  }
+
+  .registration__contacts-info {
+    flex-direction: row;
+    align-self: center;
   }
 }

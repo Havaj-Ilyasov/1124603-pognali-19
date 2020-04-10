@@ -18,7 +18,9 @@
         </a>
         <button class="page-header__toggle-menu" type="button">X</button>
         <ul class=" page-header__login-list login-list login-list--table-version">
-          <a class="login-list__link main-link" href="#">Авторизация</a>
+          <li class="login-list__item">
+            <a class="login-list__link main-link" href="#">Авторизация</a>
+          </li>
         </ul>
       </div>
       <div class="page-header__adaptive-menu-wrapper">
@@ -36,13 +38,15 @@
               </li>
             </ul>
             <ul class="main-nav__list login-list">
-              <a class="login-list__link main-link" href="#">Авторизация</a>
+              <li class="login-list__item">
+                <a class="login-list__link main-link" href="#">Авторизация</a>
+              </li>
             </ul>
           </nav>
           <p class="page-header__contacts-info contacts-info">
             <a class="contacts-info__tel contacts-info__link" href="tel:88005558628">
               <span class="contacts-info__icon">
-                <svg version="1.1" id="Layer_1" width="50" height="50" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" width="50" height="50" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18"
                   style="enable-background:new 0 0 18 18;" xml:space="preserve">
                   <style type="text/css">
@@ -51,7 +55,7 @@
                     }
                   </style>
                   <g>
-                    <g id="UrwUhy_1_">
+                    <g>
                       <g>
                         <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
                   c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
@@ -69,7 +73,7 @@
             </a>
             <a class="contacts-info__mail contacts-info__link" href="mailto:mail@htmlacademy.ru">
               <span class="contacts-info__icon">
-                <svg version="1.1" id="Layer_1" width="50" height="50" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" width="50" height="50" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14"
                   style="enable-background:new 0 0 18 14;" xml:space="preserve">
                   <style type="text/css">
@@ -132,7 +136,7 @@
           <p class="intro__contacts-info contacts-info">
             <a class="contacts-info__tel" href="tel:88005558628">
               <span class="contacts-info__icon contacts-info__icon--tel">
-                <svg version="1.1" id="Layer_1" width="40" height="40" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" width="40" height="40" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18"
                   style="enable-background:new 0 0 18 18;" xml:space="preserve">
                   <style type="text/css">
@@ -141,7 +145,7 @@
                     }
                   </style>
                   <g>
-                    <g id="UrwUhy_1_">
+                    <g>
                       <g>
                         <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
                   c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
@@ -159,7 +163,7 @@
             </a>
             <a class="contacts-info__mail" href="mailto:mail@htmlacademy.ru">
               <span class="contacts-info__icon contacts-info__icon--mail">
-                <svg version="1.1" id="Layer_1" width="40" height="40" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" width="40" height="40" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14"
                   style="enable-background:new 0 0 18 14;" xml:space="preserve">
                   <style type="text/css">
@@ -429,28 +433,33 @@
         <form class="registration__form">
           <p class="registration__form-input-wrapper">
             <input class="registration__form-input" type="text" placeholder="E-mail">
-            <button class="registration__form-btn" type="submit" aria-label="Кнопка отправления формы"></button>
+            <button class="registration__form-btn" type="submit">
+              Регистрация
+            </button>
           </p>
         </form>
         <p class="registration__subtitle">Остались вопросы? Мы с радостью на них ответим!</p>
         <p class="registration__contacts-info contacts-info">
-          <a class="contacts-info__tel" href="tel:88005558628">8 800 555-86-28</a>
-          <a class="contacts-info__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contacts-info__tel contacts-info__link" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="contacts-info__mail contacts-info__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
       </div>
     </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
-      <a class="contacts__link" href="#">Проложить маршрут</a>
+      <div class="contacts__wrapper wrapper">
+        <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+        <a class="contacts__link main-link-index" href="#">Проложить маршрут</a>
+      </div>
       <section class="map">
-        <h2 class="visually-hidden">Карта</h3>
-          <div class="map__container">
+        <h2 class="visually-hidden">Карта</h2>
+          <div class="map__wrapper">
             <img class="map__img" src="" width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
           </div>
       </section>
     </section>
+</main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
@@ -477,7 +486,7 @@
         <div class="page-footer__developer developer">
           <p class="developer__text">Разработано</p>
           <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="developer__logo-img" src="" alt="" width="27" height="34" alt="Логотип HTML Academy">
+            <img class="developer__logo-img" src="" width="27" height="34" alt="Логотип HTML Academy">
           </a>
         </div>
       </div>
