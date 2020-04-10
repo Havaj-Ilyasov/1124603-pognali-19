@@ -1,14 +1,21 @@
 .add-plan {
+  display: flex;
+  flex-direction: column;
+
   color: $dark-slate-blue;
 
   background-color: $light-blue-grey-five;
 }
 
+.add-plan__wrapper {
+  outline: 1px solid blueviolet;
+}
+
 .add-plan__title {
   margin: 0;
+  margin-bottom: 31px;
 
   font-size: 24px;
-  font-weight: 700;
   line-height: 24px;
 }
 
@@ -17,4 +24,25 @@
   padding: 0;
 
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .add-plan__wrapper {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .add-plan__title {
+    margin-bottom: 60px;
+
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-plan__wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

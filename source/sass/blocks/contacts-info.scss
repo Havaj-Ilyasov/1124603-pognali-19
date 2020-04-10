@@ -10,7 +10,9 @@
   height: 40px;
 }
 
-.registration__contacts-info .contacts-info__tel,
-.registration__contacts-info .contacts-info__mail {
-  color: $light-gold;
+@media (min-width: $tablet-width) {
+  .contacts-info__link {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }

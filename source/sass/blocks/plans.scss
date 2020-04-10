@@ -6,15 +6,46 @@
 
 .plans__title {
   margin: 0;
+  margin-bottom: 35px;
 
   font-size: 24px;
-  font-weight: 700;
   line-height: 24px;
 }
 
 .plans__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.plans__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .plans__wrapper {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .plans__title {
+    margin-bottom: 55px;
+
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plans__wrapper {
+    padding-right: 60px;
+    padding-left: 65px;
+  }
+
+  .plans__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }

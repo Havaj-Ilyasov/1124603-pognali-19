@@ -1,17 +1,33 @@
 .step {
+  margin-bottom: 10px;
+  padding-top: 24px;
+  padding-bottom: 22px;
+
   background-color: $white;
 }
 
-.step__index,
-.step__title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 20px;
-  color: $dark-slate-blue;
+.step:nth-child(1) {
+  min-height: 795px;
+}
+
+.step:nth-child(2) {
+  min-height: 517px;
+}
+
+.step:nth-child(3) {
+  min-height: 839px;
+}
+
+.step:last-child {
+  margin-bottom: 44px;
 }
 
 .step__title {
   margin: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+  color: $dark-slate-blue;
 }
 
 .step__desc {
@@ -23,7 +39,8 @@
   color: $greyish-brown;
 }
 
-.step__input-label {
+.step__input-label,
+.step__unit {
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
@@ -31,9 +48,6 @@
 }
 
 .step__input {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 13.5px;
   color: $dark-slate-blue;
 }
 
@@ -58,7 +72,7 @@
   line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
-  color: inherit;
+  color: $dark-two;
 }
 
 .step__submit {
@@ -78,4 +92,96 @@
   font-weight: 400;
   line-height: 22px;
   color: $greyish-brown;
+}
+
+@media (min-width: $tablet-width) {
+  .step {
+    margin-bottom: 40px;
+    padding-top: 49px;
+    padding-bottom: 50px;
+  }
+
+  .step:nth-child(1) {
+    min-height: 1435px;
+  }
+
+  .step:nth-child(2) {
+    min-height: 784px;
+  }
+
+  .step:nth-child(3) {
+    min-height: 922px;
+  }
+
+  .step:last-child {
+    margin-bottom: 63px;
+  }
+
+  .step__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .step__desc {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .step__input-label,
+  .step__unit {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .step__input-children-label {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $dark-slate-blue;
+  }
+
+  .step__next {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    color: $dark-slate-blue;
+  }
+
+  .step__submit {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    color: $dark-slate-blue;
+  }
+
+  .step__back {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    color: $dark-slate-blue;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .step {
+    margin-bottom: 44px;
+    padding-top: 100px;
+    padding-bottom: 105px;
+  }
+
+  .step:nth-child(1) {
+    min-height: 1299px;
+  }
+
+  .step:nth-child(2) {
+    min-height: 900px;
+  }
+
+  .step:nth-child(3) {
+    min-height: 1064px;
+  }
+
+  .step:last-child {
+    margin-bottom: 72px;
+  }
 }
